@@ -91,7 +91,6 @@ if Machine_Learning_Model==0:
 elif Machine_Learning_Model==1:
     clf=ExtraTreesClassifier(n_estimators=1000)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -107,7 +106,6 @@ elif Machine_Learning_Model==1:
 elif Machine_Learning_Model==2:
     clf=BaggingClassifier(n_estimators=1000,)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -123,7 +121,6 @@ elif Machine_Learning_Model==2:
 elif Machine_Learning_Model==3:
     clf=AdaBoostClassifier(n_estimators=1000, learning_rate=1.0)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -139,7 +136,6 @@ elif Machine_Learning_Model==3:
 elif Machine_Learning_Model==4:
     clf=DecisionTreeClassifier(max_depth=10, min_samples_split=2,random_state=0)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -155,7 +151,6 @@ elif Machine_Learning_Model==4:
 elif Machine_Learning_Model==5:
     clf=GaussianNB()
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -171,7 +166,6 @@ elif Machine_Learning_Model==5:
 elif Machine_Learning_Model==6:
     clf=QuadraticDiscriminantAnalysis()
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -187,7 +181,6 @@ elif Machine_Learning_Model==6:
 elif Machine_Learning_Model==7:
     clf=KNeighborsClassifier(3)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -203,7 +196,6 @@ elif Machine_Learning_Model==7:
 elif Machine_Learning_Model==8:
     clf=SVC(kernel="linear", C=0.025)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -219,7 +211,6 @@ elif Machine_Learning_Model==8:
 elif Machine_Learning_Model==9:
     clf=MLPClassifier(alpha=1)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
@@ -235,7 +226,6 @@ elif Machine_Learning_Model==9:
 elif Machine_Learning_Model==10:
     clf=KMeans(n_clusters=5)
     clf.fit(X, y)
-    # score = clf.score(X, y)
     new_shape = (img.shape[0] * img.shape[1], img.shape[2] - 1) 
     img_as_array = img[:, :, :7].reshape(new_shape)
     # Now predict for each pixel
