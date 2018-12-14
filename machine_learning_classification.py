@@ -19,7 +19,6 @@ from qgis.gui import *
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 import numpy as np
-import matplotlib.pyplot as plt
 from osgeo import gdal, gdal_array
 from sklearn.ensemble import (RandomForestClassifier, 
                               ExtraTreesClassifier, 
